@@ -15,6 +15,7 @@ body {
 .rectangles-container {
     display: flex;
     align-items: center;
+    position:relative;
 }
 
 .red-rectangle {
@@ -43,7 +44,12 @@ body {
     background: transparent;
     display: flex;
     align-items: center;
+    padding: 80px;
    /*INSERT BORDERbottom*/
+}
+
+.label {
+    text-transform: uppercase;
 }
 
 .input {
@@ -53,10 +59,12 @@ body {
     border: 0;
     padding: 20px;
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
 }
 
 .input::placeholder {
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
 }
 
 .btn {
@@ -73,14 +81,10 @@ body {
     background-color: #ffffff;
 }
 
-.duck-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
 .duck-image {
     max-width: 100%;
     height: auto;
+    position: absolute;
+    left: 65%;
+    top: -50px;
 }
