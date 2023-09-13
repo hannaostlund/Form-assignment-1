@@ -13,29 +13,34 @@
 
 <body>            <!--The Duck Form Container-->
     <div class="main-container">
+        <div class="rectangles-container">
+            <!--Red rectangle background-->
+            <div class="red-rectangle">
 
-        <div class="red-rectangle">
+                <div class="form-content"> <!--FORM GOES HERE-->
+                    <form class="form" autocomplete="off">
+                                        <!--Form fields-->
+                        <label for="name" class="label">Full name</label>
+                        <input type="text" id="name" name="name" class="input" required>
+                    
+                        <label for="email" class="label">Email</label>
+                        <input type="email" id="email" name="email" class="input" placeholder="Your Email" required>
+                    
+                        <label for="message" class="label">Message regarding</label>
+                        <textarea id="message" name="message" class="input message"></textarea>
 
-            <div class="form-content"> <!--FORM GOES HERE-->
-                <form class="form" autocomplete="off">
-                    <label for="name" class="label">Full name</label>
-                    <input type="text" id="name" name="name" class="input" required>
+                        <label for="message" class="label">Message</label>
+                        <textarea id="message" name="message" class="input message" placeholder="Your Message "></textarea>
                     
-                    <label for="email" class="label">Email</label>
-                    <input type="email" id="email" name="email" class="input" placeholder="Your Email" required>
-                    
-                    <label for="message" class="label">Message regarding</label>
-                    <textarea id="message" name="message" class="input message"></textarea>
-
-                    <label for="message" class="label">Message</label>
-                    <textarea id="message" name="message" class="input message" placeholder="Your Message "></textarea>
-                    
-                    <button type="submit">Send message</button>
-                </form>
+                        <button type="submit" class="btn">Send message</button>
+                    </form>
+                </div>
             </div>
-    </div>
-        <div class="orange-rectangle">
-            <img src="images/duck.png" alt="Yellow duck" class="duck-image">
+            <div class="duck-container">
+            <img src="images/duck.png" alt="yellow-duck" class="duck-image"></div>
+            
+            <!-- Orange rectangle background-->
+            <div class="orange-rectangle"></div>
         </div>
     </div>
 </body>
